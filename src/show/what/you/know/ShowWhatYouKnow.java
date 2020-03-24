@@ -16,9 +16,11 @@ public class ShowWhatYouKnow {
         Scanner keyedinput = new Scanner (System.in); //Scanner initialized
         
         double finalMark = 0;   //variable for the average mark
-        //prompt to the user and array for the marks
+        
+        //prompt to the user
+        System.out.println("-------------Average Mark Calulator-------------");
         System.out.println("Please enter five marks: ");
-        double [ ] marks = new double [5];
+        double [ ] marks = new double [5]; //array for 5 marks
         for (int i=0;i<=4;i++){ //loop to promp the user 5 times for 5 marks
             marks[i]= keyedinput.nextDouble();
         }
@@ -33,6 +35,7 @@ public class ShowWhatYouKnow {
         finalMark = finalMark / 100;
         //output to the user, average mark rounded to two decimal places
         System.out.println("Your average mark is: "+finalMark);
+        
         //Scanner closed
         keyedinput.close();
 
